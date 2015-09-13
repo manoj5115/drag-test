@@ -74,6 +74,8 @@ public class MainActivity extends Activity {
                     break;
                 case DragEvent.ACTION_DRAG_ENDED:
                     v.setBackgroundDrawable(normalShape);
+                    View view = (View) event.getLocalState();
+                    view.setVisibility(View.VISIBLE);
                 default:
                     break;
             }
