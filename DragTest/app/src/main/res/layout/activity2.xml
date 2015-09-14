@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:padding="@dimen/padding_5"
+    android:background="@drawable/shape">
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:text="Act2 Layout"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mainButton"
+        android:background="#bba175"
+        android:padding="@dimen/padding_10"
+        android:text="@string/icon_close"
+        android:textSize="@dimen/font_10" />
+
+</RelativeLayout>
