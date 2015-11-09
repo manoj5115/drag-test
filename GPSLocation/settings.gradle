@@ -1,0 +1,6 @@
+include ':app'
+include ':notification'
+include ':multitouch'
+include ':smsSendApp'
+include ':sensorApp'
+include ':mapApp'
