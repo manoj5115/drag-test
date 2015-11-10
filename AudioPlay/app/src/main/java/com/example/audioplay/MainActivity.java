@@ -3,10 +3,7 @@ package com.example.audioplay;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.os.Environment;
 import android.app.Activity;
-import android.support.annotation.NonNull;
-import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -23,8 +20,6 @@ public class MainActivity extends Activity {
         start = (Button) findViewById(R.id.button1);
         pause = (Button) findViewById(R.id.button2);
         stop = (Button) findViewById(R.id.button3);
-        //creating media player
-        //playAudio();
 
         start.setOnClickListener(new OnClickListener() {
             @Override
@@ -50,8 +45,7 @@ public class MainActivity extends Activity {
             }
         });
     }
-
-    @NonNull
+    
     private void playAudio() {
         if(mp == null) {
             mp = new MediaPlayer();
